@@ -1,32 +1,71 @@
-<html>
+<!DOCTYPE html>
     <head>
         <meta charset="utf-8">
         <title> Mon panier </title>
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <nav>
-            <ul>
-              <li class="menu-deroulant">
-                <a href="#">Taille</a>
-                <ul class="sous-menu">
-                  <li><a href="#">100x200</a></li>
-                  <li><a href="#">200x400</a></li>
-                  <li><a href="#">400x800</a></li>
-                </ul>
-              </li>
-              <li class="menu-deroulant">
-                <a href="#">Eclairage</a>
-                <ul class="sous-menu">
-                  <li><a href="#">Tres lumineux</a></li>
-                  <li><a href="#">luminescent</a></li>
-                  <li><a href="#">Eteint</a></li>
-                </ul>
-              </li>
-              <li><a href="#">À propos</a></li>
-              <li><a href="#">Contactez-nous</a></li>
-            </ul>
-          </nav>
+        <label for="standard-select">Taille</label>
+        <div class="select">
+            <select id="standard-select">
+                <option value="Option 1">--Select--</option>
+                <option value="Option 2">100x200</option>
+                <option value="Option 3">200x400</option>
+                <option value="Option 4">400x800</option>
+            </select>
+            <span class="focus"></span>
+        </div>
+        <label for="standard-select">Duree</label>
+        <div class="select">
+            <select id="standard-select">
+                <option value="Option 1">--Select--</option>
+                <option value="Option 2">7 jours</option>
+                <option value="Option 3">14 jours</option>
+                <option value="Option 4">1 mois</option>
+                <option value="Option 5">2 mois</option>
+                <option value="Option 6">1 an</option>
+                <option value="Option 7">Plus</option>
+            </select>
+            <span class="focus"></span>
+        </div>
+        <label for="standard-select">Exposition</label>
+        <div class="select">
+            <select id="standard-select">
+                <option value="Option 1">--Select--</option>
+                <option value="Option 2">Populaire</option>
+                <option value="Option 3">Visible</option>
+                <option value="Option 4">Normale</option>
+                <option value="Option 5">Economique</option>
+            </select>
+            <span class="focus"></span>
+        </div>
+        <label for="standard-select">Eclairage</label>
+        <div class="select">
+            <select id="standard-select">
+                <option value="Option 1">--Select--</option>
+                <option value="Option 2">Lumineux</option>
+                <option value="Option 3">Luminescent</option>
+                <option value="Option 4">Eteint</option>
+            </select>
+            <span class="focus"></span>
+        </div>
+        <label for="standard-select">Assurance</label>
+        <div class="select">
+            <select id="standard-select">
+                <option value="Option 1">--Select--</option>
+                <option value="Option 2">Oui</option>
+                <option value="Option 3">Non</option>
+            </select>
+            <span class="focus"></span>
+        </div>
+        <label for="standard-select">Livraison</label>
+        <div class="select">
+            <select id="standard-select">
+                <option value="Option 1">--Select--</option>
+                <option value="Option 2">Rapide (1 à 2 jours)</option>
+                <option value="Option 3">Normale ( 5 à 7 jours)</option>
+            </select>
+            <span class="focus"></span>
+        </div>
     </body>
-
-
 </html>
