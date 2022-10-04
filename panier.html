@@ -5,67 +5,75 @@
         <link href="style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <label for="standard-select">Taille</label>
+        <label for="Taille">Taille</label>
         <div class="select">
-            <select id="standard-select">
+            <select id="Taille">
                 <option value="Option 1">--Select--</option>
-                <option value="Option 2">100x200</option>
-                <option value="Option 3">200x400</option>
-                <option value="Option 4">400x800</option>
+                <option id="0" value="Option 2">100x200</option>
+                <option id="1" value="Option 3">200x400</option>
+                <option id="2" value="Option 4">400x800</option>
             </select>
             <span class="focus"></span>
         </div>
-        <label for="standard-select">Duree</label>
+        <label for="Duree">Duree</label>
         <div class="select">
-            <select id="standard-select">
+            <select id="Duree">
                 <option value="Option 1">--Select--</option>
-                <option value="Option 2">7 jours</option>
-                <option value="Option 3">14 jours</option>
-                <option value="Option 4">1 mois</option>
-                <option value="Option 5">2 mois</option>
-                <option value="Option 6">1 an</option>
-                <option value="Option 7">Plus</option>
+                <option id="0" value="Option 2">7 jours</option>
+                <option id="1" value="Option 3">14 jours</option>
+                <option id="2" value="Option 4">1 mois</option>
+                <option id="3" value="Option 5">2 mois</option>
+                <option id="4" value="Option 6">1 an</option>
             </select>
             <span class="focus"></span>
         </div>
-        <label for="standard-select">Exposition</label>
+        <label for="Exposition">Exposition</label>
         <div class="select">
-            <select id="standard-select">
+            <select id="Exposition">
                 <option value="Option 1">--Select--</option>
-                <option value="Option 2">Populaire</option>
-                <option value="Option 3">Visible</option>
-                <option value="Option 4">Normale</option>
-                <option value="Option 5">Economique</option>
+                <option id="0" value="Option 2">Populaire</option>
+                <option id="1" value="Option 3">Visible</option>
+                <option id="2" value="Option 4">Economique</option>
             </select>
             <span class="focus"></span>
         </div>
-        <label for="standard-select">Eclairage</label>
+        <label for="Eclairage de nuit">Eclairage de nuit</label>
         <div class="select">
-            <select id="standard-select">
+            <select id="Eclairagedenuit">
                 <option value="Option 1">--Select--</option>
-                <option value="Option 2">Lumineux</option>
-                <option value="Option 3">Luminescent</option>
-                <option value="Option 4">Eteint</option>
+                <option id="0" value="Option 2">Lumineux</option>
+                <option id="1" value="Option 3">Luminescent</option>
+                <option id="2" value="Option 4">Rien</option>
             </select>
             <span class="focus"></span>
         </div>
-        <label for="standard-select">Assurance</label>
+        <label for="Assurance">Assurance</label>
         <div class="select">
-            <select id="standard-select">
+            <select id="Assurance">
                 <option value="Option 1">--Select--</option>
-                <option value="Option 2">Oui</option>
-                <option value="Option 3">Non</option>
+                <option id="0" value="Option 2">Oui</option>
+                <option id="1" value="Option 3">Non</option>
             </select>
             <span class="focus"></span>
         </div>
-        <label for="standard-select">Livraison</label>
+        <label for="Livraison">Livraison</label>
         <div class="select">
-            <select id="standard-select">
+            <select id="Livraison">
                 <option value="Option 1">--Select--</option>
-                <option value="Option 2">Rapide (1 à 2 jours)</option>
-                <option value="Option 3">Normale ( 5 à 7 jours)</option>
+                <option id="0" value="Option 2">Rapide (1 à 2 jours)</option>
+                <option id="1" value="Option 3">Normale ( 5 à 7 jours)</option>
             </select>
             <span class="focus"></span>
+        </div>
+        <div class="dropdown">
+            <div id="cart">
+                <p><span id="in-cart-items-num">0</span> Articles</p>
+            </div>
+        
+            <ul id="cart-dropdown" hidden>
+                <li id="empty-cart-msg"><a>Votre panier est vide</a></li>
+                <li class="go-to-cart hidden"><a href="/panier/">Voir le panier</a></li>
+            </ul>
         </div>
     </body>
 </html>
