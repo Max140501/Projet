@@ -1,17 +1,16 @@
 *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
 :root {
-  --select-border: #777;
+  --select-border: rgb(112, 112, 112);
   --select-focus: blue;
   --select-arrow: var(--select-border);
 }
-
 select {
-  // A reset of styles, including removing the default dropdown arrow
   appearance: none;
   background-color: transparent;
   border: none;
@@ -22,33 +21,25 @@ select {
   font-size: inherit;
   cursor: inherit;
   line-height: inherit;
+  z-index: 1; 
 
-  // Stack above custom arrow
-  z-index: 1;
-
-  // Remove dropdown arrow in IE10 & IE11
-  // @link https://www.filamentgroup.com/lab/select-css.html
+  
   &::-ms-expand {
     display: none;
   }
-
-  // Remove focus outline, will add on alternate element
-  outline: none;
 }
-
 .select {
   display: grid;
   grid-template-areas: "select";
   align-items: center;
   position: relative;
-
   select,
   &::after {
     grid-area: select;
   }
 
   min-width: 15ch;
-  max-width: 30ch;
+  max-width: 20ch;
 
   border: 1px solid var(--select-border);
   border-radius: 0.25em;
@@ -56,9 +47,11 @@ select {
 
   font-size: 1.25rem;
   cursor: pointer;
-  line-height: 1.1;
+  line-height: 1.1 ;
+  
+}
 
-  // Optional styles
-  // remove for transparency
-  background-color: #fff;
-  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+
+.dropdown {
+  text-indent : 4.7%;
+}
