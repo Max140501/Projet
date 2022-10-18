@@ -1,4 +1,14 @@
-<script type="text/javascript">
+
+function getid(selName){
+    select = document.getElementById(selName);
+    id=(select.options[select.selectedIndex].text);
+    document.getElementById(id).innerHTML = '<img src="/fs03/share/users/maxence.di-meo/home/Bureau/projet/images 2.jpeg">';
+}
+    
+
+
+
+
 function calculTotal(){
     var Taille = Number(panier.getElementById("Taille").value);
     var Duree = Number(panier.getElementById("Duree").value);
@@ -10,4 +20,3 @@ function calculTotal(){
     var amount = Number(((Taille + Exposition + Eclairagedenuit + Assurance) * Duree) + Livraison) ;
     panier.getElementById("amount") = amount;
 }
-</script>
