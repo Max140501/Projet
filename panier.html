@@ -3,11 +3,12 @@
         <meta charset="utf-8">
         <title> Mon panier </title>
         <link href="style.css" rel="stylesheet" type="text/css">
+        <script src='prix.js'></script>
     </head>
     <body>
         <label for="Taille">Taille</label>
         <div class="select">
-            <select id="Taille">
+            <select id="Taille" onchange="getid('Taille')">
                 <option value="Option 1">--Select--</option>
                 <option id="0" value="5">100x200</option>
                 <option id="1" value="10">200x400</option>
@@ -75,6 +76,8 @@
             </ul>
         </div>
         <div class= "d1"></div>
+        <p id=100x200>
+            <img src="/fs03/share/users/maxence.di-meo/home/Bureau/projet/images.jpeg">
+        </p>
     </body>
 </html>
-
