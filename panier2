@@ -1,0 +1,17 @@
+<form method="post" action="traitement.php">
+    <fieldset>
+        <label for="nom">Votre nom :*</label>
+        <input type="text" name="nom" id="nom" />
+        <label for="prenom">Votre prenom :*</label>
+        <input type="text" name="prenom" id="prenom" />
+        <label for="tel">Votre telephone :*</label>
+        <input type="tel" />
+        <label for="email">Votre email :*</label>
+        <input type="email" />
+        <label for="date">date de livraison*</label>
+        <input type="date" />
+        <p>
+            * doit obligatoirement etre remplie
+        </p>
+    </fieldset>
+ </form>
