@@ -25,12 +25,7 @@ select {
   display: grid;
   grid-template-areas: "select";
   align-items: center;
-  position: relative;
-  select
-  :after 
-    grid-area select;
-  
-
+  position: relative; 
   min-width: 15ch;
   max-width: 20ch;
 
