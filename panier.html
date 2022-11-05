@@ -6,7 +6,7 @@
         <script src='prix.js'></script>
     </head>
 <body>
-  <form method="post" action="traitement.php">
+  <form method="post" action="reussi.html">
     <fieldset>
         <label for="nom">Votre nom :*</label>
         <input type="text" name="nom" id="nom" />
@@ -22,5 +22,12 @@
             * doit obligatoirement etre remplie
         </p>
     </fieldset>
+    <fieldset>
+    <label for="ameliorer">Demande de renseignement</label><br />
+    <textarea name="ameliorer" id="ameliorer"></textarea>
+    </fieldset>
+    <div>
+        <input type="reset" value="Réinitialiser le formulaire">
+        <input type="submit" value="Soumission">
+    </div>
  </form>
-</body>
