@@ -8,76 +8,53 @@
     <body>
         <label for="Taille">Taille</label>
         <div class="select">
-            <select id="Taille" onchange="getid('Taille')">
+            <select id="Taille" onchange="getid('Taille')"> <!--formulaire pour changer la taille-->
                 <option value="Option 1">--Select--</option>
-                <option id="0" value="5">100x200</option>
-                <option id="1" value="10">200x400</option>
-                <option id="2" value="20">400x800</option>
+                <option id="T100x200" value="5">100x200</option>
+                <option id="T200x400" value="10">200x400</option>
+                <option id="T400x800" value="20">400x800</option>
             </select>
             <span class="focus"></span>
         </div>
-        <label for="Duree">Duree</label>
+        <label for="Eclairage de nuit">Eclairage de nuit</label><!--formulaire pour choisir l'eclairage de nuit-->
         <div class="select">
-            <select id="Duree">
+            <select id="Eclairagedenuit" onchange="getid('Eclairagedenuit')">
                 <option value="Option 1">--Select--</option>
-                <option id="0" value="7">7 jours</option>
-                <option id="1" value="14">14 jours</option>
-                <option id="2" value="30">1 mois</option>
-                <option id="3" value="60">2 mois</option>
-                <option id="4" value="365">1 an</option>
+                <option id="eclairage" value="1">Lumineux</option>
+                <option id="paseclairage" value="0">Rien</option>
             </select>
             <span class="focus"></span>
         </div>
-        <label for="Exposition">Exposition</label>
+        <label for="Assurance">Assurance</label><!--formulaire pour choisir une assurance-->
         <div class="select">
-            <select id="Exposition">
+            <select id="Assurance" onchange="getid('Assurance')">
                 <option value="Option 1">--Select--</option>
-                <option id="0" value="2">Populaire</option>
-                <option id="1" value="1">Visible</option>
-                <option id="2" value="0">Economique</option>
+                <option id="assurance" value="1">Oui</option>
+                <option id="pasassurance" value="0">Non</option>
             </select>
             <span class="focus"></span>
         </div>
-        <label for="Eclairage de nuit">Eclairage de nuit</label>
+        <label for="Livraison">Livraison</label><!--formulaire pour choisir le mode de livraison-->
         <div class="select">
-            <select id="Eclairagedenuit">
+            <select id="Livraison" onchange="getid('Livraison')">
                 <option value="Option 1">--Select--</option>
-                <option id="0" value="2">Lumineux</option>
-                <option id="1" value="1">Luminescent</option>
-                <option id="2" value="0">Rien</option>
-            </select>
-            <span class="focus"></span>
-        </div>
-        <label for="Assurance">Assurance</label>
-        <div class="select">
-            <select id="Assurance">
-                <option value="Option 1">--Select--</option>
-                <option id="0" value="1">Oui</option>
-                <option id="1" value="0">Non</option>
-            </select>
-            <span class="focus"></span>
-        </div>
-        <label for="Livraison">Livraison</label>
-        <div class="select">
-            <select id="Livraison">
-                <option value="Option 1">--Select--</option>
-                <option id="0" value="25">Rapide (1 à 2 jours)</option>
-                <option id="1" value="0">Normale ( 5 à 7 jours)</option>
+                <option id="rapide" value="25">Rapide (1 à 2 jours)</option>
+                <option id="normal" value="0">Normale ( 5 à 7 jours)</option>
             </select>
             <span class="focus"></span>
         </div>
         <div class="dropdown">
-            <div id="cart">
-                <p><span id="in-cart-items-num">0</span> Articles</p>
-            </div>
-        
             <ul id="cart-dropdown" >
-                <nav class="go-to-cart"><a href="/panier/">Ajouter au panier</a></nav>
+                <nav class="go-to-cart"><a href=file:///C:/Users/maxgi/Desktop/site/panier2.html>Ajouter au panier</a></nav>
             </ul>
         </div>
         <div class= "d1"></div>
         <p id=100x200>
-            <img src="/fs03/share/users/maxence.di-meo/home/Bureau/projet/images.jpeg">
+            <img src="C:/Users/maxgi/Desktop/site/i1.jpg">
         </p>
+        <p id="prix">prix
+        </p>
+        <input type="button" onclick='window.location.reload(false)' value="Reinitialiser"/>
+        <div id='map'></div>
     </body>
 </html>
