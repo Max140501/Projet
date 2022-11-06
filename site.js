@@ -1,16 +1,13 @@
 function Prix(selName){ //fonction calculant le prix d'un produit et la personnalisation
     localStorage.clear();
     select = document.getElementById(selName);
-    valueTaille = (Taille.options[Taille.selectedIndex].value)
-    valueAssurance=(Assurance.options[Assurance.selectedIndex].value);
-    valueEclairagedenuit=(Eclairagedenuit.options[Eclairagedenuit.selectedIndex].value);
     idT=(Taille.options[Taille.selectedIndex].text);//variable pour le local storage
     idA=(Assurance.options[Assurance.selectedIndex].text);
     idC=(Couleurs.options[Couleurs.selectedIndex].text);
     idE=(Eclairagedenuit.options[Eclairagedenuit.selectedIndex].text);
     idS=(Livraison.options[Livraison.selectedIndex].text);
     
-    if(idT=="100x200"){document.getElementById("image").innerHTML = '<img src="panneaux1.png">',
+    if(idT=="100x200"){document.getElementById("image").innerHTML = '<img src="panneaux1.png">',//changer l'image en fonction du formulaire
     prix=50,
     document.getElementById("prix").innerHTML=prix
     Image= '<img src="panneaux1.png">'
@@ -71,17 +68,17 @@ function Prix(selName){ //fonction calculant le prix d'un produit et la personna
     document.getElementById("prix").innerHTML=prix
     Image= '<img src="panneaux3vert.png">'}
     
-    if(idA=="Oui"){
+    if(idA=="Oui"){//rajouter le prix si Assurance
     prix = prix + 25
     document.getElementById("prix").innerHTML=prix
     }
 
-    if(idS=="Express(-3 jours)"){
+    if(idS=="Express(-3 jours)"){//rajouter le prix si Livraison express
     prix = prix + 8
     document.getElementById("prix").innerHTML=prix
     }
 
-    if(idE=="Eclairage"){
+    if(idE=="Eclairage"){//rajouter le prix si Eclairage
     prix = prix + 15
     document.getElementById("prix").innerHTML=prix
     }
@@ -95,7 +92,7 @@ function Prix(selName){ //fonction calculant le prix d'un produit et la personna
     localStorage.setItem("livraison",idS);
 }
 
-mapboxgl.accessToken = 'pk.eyJ1IjoibWF4MTQwNTAxIiwiYSI6ImNsYTNzMmlobjA1MXAzdm14dngyeG1zazQifQ.2IHWppCoE_B-epIl553RXg';
+mapboxgl.accessToken = 'pk.eyJ1IjoibWF4MTQwNTAxIiwiYSI6ImNsYTNzMmlobjA1MXAzdm14dngyeG1zazQifQ.2IHWppCoE_B-epIl553RXg'; //api mapbox echec
 
 const start = [45.7627925, 4.8630073];
 const end = [input(x),input(y)]
