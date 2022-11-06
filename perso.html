@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
-        <title> Mon panier </title>
+        <title> Personalisation </title>
         <link href="style.css" rel="stylesheet" type="text/css">
         <script src='prix.js'></script>
     </head>
@@ -9,7 +9,7 @@
         <form method="post">
             <label for="Taille">Taille</label>
             <div class="select">
-                <select id="Taille" onchange="getid('Taille')" onchange="Total('Taille')"> <!--formulaire pour changer la taille-->
+                <select id="Taille" onchange="Prix('Taille')" > <!--formulaire pour changer la taille-->
                     <option value=0>--Select--</option>
                     <option id="T100x200" value=5>100x200</option>
                     <option id="T200x400" value=10>200x400</option>
@@ -19,16 +19,26 @@
             </div>
             <label for="Eclairage de nuit">Eclairage de nuit</label><!--formulaire pour choisir l'eclairage de nuit-->
             <div class="select">
-                <select id="Eclairagedenuit" onchange="getid('Eclairagedenuit')" onchange="Total('Eclairagedenuit')">
+                <select id="Eclairagedenuit" onchange="Prix('Eclairagedenuit')">
                     <option value=0>--Select--</option>
-                    <option id="eclairage" value=1>Lumineux</option>
+                    <option id="eclairage" value=1>Eclairage</option>
                     <option id="paseclairage" value=0>Rien</option>
+                </select>
+                <span class="focus"></span>
+            </div>
+            <label for="Couleurs">Couleurs</label><!--formulaire pour choisir la couleur-->
+            <div class="select">
+                <select id="Couleurs" onchange="Prix('Couleurs')">
+                    <option value=0>--Select--</option>
+                    <option id="bleu" value=0>Bleu</option>
+                    <option id="rouge" value=0>Rouge</option>
+                    <option id="noir" value=0>Noir</option>
                 </select>
                 <span class="focus"></span>
             </div>
             <label for="Assurance">Assurance</label><!--formulaire pour choisir une assurance-->
             <div class="select">
-                <select id="Assurance" onchange="getid('Assurance')" onchange="Total('Assurance')">
+                <select id="Assurance" onchange="Prix('Assurance')">
                     <option value=0>--Select--</option>
                     <option id="assurance" value=1>Oui</option>
                     <option id="pasassurance" value=0>Non</option>
@@ -39,17 +49,16 @@
         </form>
         <div class="dropdown">
             <ul id="cart-dropdown" >
-                <nav class="go-to-cart"><a href=file:///C:/Users/maxgi/Desktop/site/panier2.html>Ajouter au panier</a></nav>
+                <nav class="go-to-cart"><a href=file:///C:/Users/maxgi/Desktop/site/panier2.html>Ajouter au panier</a></nav><!--permet d'ajouter un produit au panier-->
             </ul>
         </div>
         <div class= "d1"></div>
-        <p id=100x200>
-            <img src=>
+        <p id=image>
         </p>
-        <p id=Lumineux>
-            <img src=>
+        <p id="prix">prix<!--zone ou le prix va s'afficher-->
         </p>
-        <p id="prix">prix
-        </p>
+        <div id="scroll_to_top"><!--pour pouvoir aller en haut de la page-->
+            <a href="#top"><img src="top.png" alt="Retourner en haut" /></a>
+        </div>
     </body>
 </html>
