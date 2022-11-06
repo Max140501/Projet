@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -300,4 +299,9 @@ footer .follow i{
 footer .droits{
   width: 100%;
   text-align: left;
+}
+#scroll_to_top img{
+  width: 20px;
+  height: 20px;
+  margin-left: 1100px;
 }
