@@ -8,7 +8,6 @@ function Prix(selName){ //fonction calculant le prix d'un produit et la personna
     idA=(Assurance.options[Assurance.selectedIndex].text);
     idC=(Couleurs.options[Couleurs.selectedIndex].text);
     idE=(Eclairagedenuit.options[Eclairagedenuit.selectedIndex].text);
-    idS=(Livraison.options[Livraison.selectedIndex].text);
     
     if(idT=="100x200"){document.getElementById("image").innerHTML = '<img src="panneaux1.png">',
     prix=50,
@@ -70,21 +69,6 @@ function Prix(selName){ //fonction calculant le prix d'un produit et la personna
     prix=205,
     document.getElementById("prix").innerHTML=prix
     Image= '<img src="panneaux3vert.png">'}
-    
-    if(idA=="Oui"){
-    prix = prix + 25
-    document.getElementById("prix").innerHTML=prix
-    }
-
-    if(idS=="Express(-3 jours)"){
-        prix = prix + 8
-        document.getElementById("prix").innerHTML=prix
-        }
-
-    if(idE=="Eclairage"){
-        prix = prix + 15
-        document.getElementById("prix").innerHTML=prix
-        }
 
     localStorage.setItem("idT",idT); //local storage
     localStorage.setItem("idE",idE);
@@ -92,7 +76,6 @@ function Prix(selName){ //fonction calculant le prix d'un produit et la personna
     localStorage.setItem("idC",idC);
     localStorage.setItem("Image",Image);
     localStorage.setItem("prix",prix);
-    localStorage.setItem("livraison",idS);
 }
 
 mapboxgl.accessToken = 'pk.eyJ1IjoibWF4MTQwNTAxIiwiYSI6ImNsYTNzMmlobjA1MXAzdm14dngyeG1zazQifQ.2IHWppCoE_B-epIl553RXg';
