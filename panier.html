@@ -3,6 +3,7 @@
         <meta charset="utf-8">
         <title> Panier </title>
         <link href="perso.css" rel="stylesheet" type="text/css">
+        <script src='site.js'></script>
     </head>
     <body>
         <form method="post" action="reussi.html">
@@ -17,7 +18,7 @@
         <input type="tel" />
         <label for="email">Email :*</label>
         <input type="email" />
-        <label for="date">Date de livraison*</label>
+        <label for="date" id="date" onchange="getdate()">Date de livraison*</label>
         <input type="date" />
         <p>
             * doit obligatoirement etre remplie
@@ -52,4 +53,3 @@
 
         </script>
     </body>
-
