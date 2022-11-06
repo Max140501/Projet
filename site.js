@@ -73,18 +73,15 @@ function Prix(selName){ //fonction calculant le prix d'un produit et la personna
     
     if(idA=="Oui"){
     prix = prix + 25
-    document.getElementById("prix").innerHTML=prix
-    }
+    document.getElementById("prix").innerHTML=prix}
 
     if(idS=="Express(-3 jours)"){
         prix = prix + 8
-        document.getElementById("prix").innerHTML=prix
-        }
+        document.getElementById("prix").innerHTML=prix}
 
     if(idE=="Eclairage"){
         prix = prix + 15
-        document.getElementById("prix").innerHTML=prix
-        }
+        document.getElementById("prix").innerHTML=prix}
 
     localStorage.setItem("idT",idT); //local storage
     localStorage.setItem("idE",idE);
