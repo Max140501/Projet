@@ -54,7 +54,7 @@
                 <option value=0>--Select--</option>
                 <option id="bleu" value=0>Bleu</option>
                 <option id="rouge" value=0>Rouge</option>
-                <option id="noir" value=0>Noir</option>
+                <option id="vert" value=0>Vert</option>
             </select>
             <span class="focus"></span>
         </div>
@@ -64,6 +64,15 @@
                 <option value=0>--Select--</option>
                 <option id="assurance" value=1>Oui</option>
                 <option id="pasassurance" value=0>Non</option>
+            </select>
+            <span class="focus"></span>
+        </div>
+        <label for="Livraison">Livraison</label><!--formulaire pour choisir une assurance-->
+        <div class="select">
+            <select id="Livraison" onchange="Prix('Livraison')">
+                <option value=0>--Select--</option>
+                <option id="express" value=1>Express(-3 jours)</option>
+                <option id="normal" value=0>Normal</option>
             </select>
             <span class="focus"></span>
         </div>
