@@ -1,13 +1,12 @@
 <!DOCTYPE html>
     <head>
         <meta charset="utf-8">
-        <title> Mon panier </title>
-        <link href="style.css" rel="stylesheet" type="text/css">
-        <script src='prix.js'></script>
+        <title> Panier </title>
+        <link href="perso.css" rel="stylesheet" type="text/css">
     </head>
-<body>
-  <form method="post" action="reussi.html">
-    <fieldset>
+    <body>
+        <form method="post" action="reussi.html">
+        <fieldset>
         <label for="nom">Nom :*</label>
         <input type="text" name="nom" id="nom" />
         <label for="prenom">Prenom :*</label>
@@ -24,17 +23,33 @@
             * doit obligatoirement etre remplie
             
         </p>
-    </fieldset>
-    <fieldset>
-    <label for="ameliorer">Demande de renseignement</label><br />
-    <textarea name="ameliorer" id="ameliorer"></textarea>
-    </fieldset>
-    <div>
-        <input type="reset" value="Reinitialiser le formulaire">
-        <input type="submit" value="Soumission">
-    </div>
+        </fieldset>
+        <fieldset>
+        <label for="ameliorer">Demande de renseignement</label><br />
+        <textarea name="ameliorer" id="ameliorer"></textarea>
+        </fieldset>
+        <div>
+            <input type="reset" value="Reinitialiser le formulaire">
+            <input type="submit" value="Soumission">
+        </div>
+        </form>
+        <fieldset>
+        <div id=Taille></div>
+        <div id=Eclairage></div>
+        <div id=Assurance></div>
+        <div id=Couleur></div>
+        <div id=pprix></div>
+        <input id="number" type="number" value=1>
+        <div id=image></div>
+        </fieldset>
+        <script>
+            document.getElementById("Taille").innerHTML='Taille : '+localStorage.getItem("idT")
+            document.getElementById("Couleur").innerHTML='Couleur : '+localStorage.getItem("idC")
+            document.getElementById("Assurance").innerHTML='Assurance : '+localStorage.getItem("idA")
+            document.getElementById("Eclairage").innerHTML='Eclairage : '+localStorage.getItem("idE")
+            document.getElementById("image").innerHTML=localStorage.getItem("Image")
+            document.getElementById("pprix").innerHTML='Prix : '+localStorage.getItem("prix")
 
-</form>
-<script>
-</script>
-</body>
+        </script>
+    </body>
+
