@@ -22,7 +22,7 @@
             <div class="nav-links">
                 <ul>
                     <li><a href="premierepage.html">Accueil</a></li>
-                    <li><a href="">Panier</a></li>
+                    <li><a href="panier.html">Panier</a></li>
                     <li><a href="quisommesnous.html">A propos</a></li>
                 </ul>
             </div>
@@ -54,7 +54,7 @@
                 <option value=0>--Select--</option>
                 <option id="bleu" value=0>Bleu</option>
                 <option id="rouge" value=0>Rouge</option>
-                <option id="vert" value=0>Vert</option>
+                <option id="noir" value=0>Noir</option>
             </select>
             <span class="focus"></span>
         </div>
@@ -67,15 +67,6 @@
             </select>
             <span class="focus"></span>
         </div>
-        <label for="Livraison">Livraison</label><!--formulaire pour choisir une Livraison-->
-            <div class="select">
-                <select id="Livraison" onchange="Prix('Livraison')">
-                    <option value=0>--Select--</option>
-                    <option id="rapide" value=1>Express(-3 jours)</option>
-                    <option id="normal" value=0>normal(+3 jours)</option>
-                </select>
-                <span class="focus"></span>
-            </div>
     <input type="reset" value="Réinitialiser le formulaire"><!--permet de reinitialiser le formulaire-->
     </form>
     <span>Le prix total du panneau est : <p id="prix">prix</p><!--zone ou le prix va s'afficher--></span>
