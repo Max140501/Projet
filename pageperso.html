@@ -2,9 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script src='site.js'></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pageperso.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap" rel="stylesheet">
@@ -12,6 +15,7 @@
     <title>Document</title>
 </head>
 <body>
+    
     <section class="header">
         <nav>
             <a href="premierepage.html"><img src="banniere.png"></a>
@@ -24,6 +28,60 @@
             </div>
         </nav>
     </section>
+    <form method="post">
+        <label for="Taille">Taille</label>
+        <div class="select">
+            <select id="Taille" onchange="Prix('Taille')" > <!--formulaire pour changer la taille-->
+                <option value=0>--Select--</option>
+                <option id="T100x200" value=5>100x200</option>
+                <option id="T200x400" value=10>200x400</option>
+                <option id="T400x800" value=20>400x800</option>
+            </select>
+            <span class="focus"></span>
+        </div>
+        <label for="Eclairage de nuit">Eclairage de nuit</label><!--formulaire pour choisir l'eclairage de nuit-->
+        <div class="select">
+            <select id="Eclairagedenuit" onchange="Prix('Eclairagedenuit')">
+                <option value=0>--Select--</option>
+                <option id="eclairage" value=1>Eclairage</option>
+                <option id="paseclairage" value=0>Rien</option>
+            </select>
+            <span class="focus"></span>
+        </div>
+        <label for="Couleurs">Couleurs</label><!--formulaire pour choisir la couleur-->
+        <div class="select">
+            <select id="Couleurs" onchange="Prix('Couleurs')">
+                <option value=0>--Select--</option>
+                <option id="bleu" value=0>Bleu</option>
+                <option id="rouge" value=0>Rouge</option>
+                <option id="noir" value=0>Noir</option>
+            </select>
+            <span class="focus"></span>
+        </div>
+        <label for="Assurance">Assurance</label><!--formulaire pour choisir une assurance-->
+        <div class="select">
+            <select id="Assurance" onchange="Prix('Assurance')">
+                <option value=0>--Select--</option>
+                <option id="assurance" value=1>Oui</option>
+                <option id="pasassurance" value=0>Non</option>
+            </select>
+            <span class="focus"></span>
+        </div>
+    <input type="reset" value="Réinitialiser le formulaire"><!--permet de reinitialiser le formulaire-->
+    </form>
+    <span>Le prix total du panneau est : <p id="prix">prix</p><!--zone ou le prix va s'afficher--></span>
+    <div class="dropdown">
+        <ul id="cart-dropdown" >
+            <nav class="go-to-cart"><a href=panier.html>Ajouter au panier</a></nav><!--permet d'ajouter un produit au panier-->
+        </ul>
+    </div>
+    <section id="imagechange" class="image1">
+        <p id=image></p>
+    </section>
+    
+    <div id="scroll_to_top"><!--pour pouvoir aller en haut de la page-->
+        <a href="#top"><img src="top.png" alt="Retourner en haut" /></a>
+    </div>
     <footer class="section-p1">
         <div class="col">
             <a href="premierepage.html"><img class="logo" src="banniere.png" alt=""></a>
